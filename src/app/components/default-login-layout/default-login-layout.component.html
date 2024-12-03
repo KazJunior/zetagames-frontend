@@ -1,0 +1,12 @@
+<main>
+    <header class="cabeçalho">
+        <a href="inicio" class="logo"><i class='bx bx-home-alt-2'></i>Zeta Games</a>
+    </header>
+    <section class="login" id="login">
+        <div class="lbox">
+            <h1>{{ title }}</h1>
+            <ng-content></ng-content>
+            <button class="btn" (click)="submit()">{{ title }}</button>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --bg-color: var(--bg-color) #101113;
+    --text-color:  #eeeeee;
+    --main-color: #000b28;
+    --other-color: #ffffff;
+    --h1-font: 4rem;
+    --p-font: 1rem;
+}
+
+body{
+    background-color:#040b22;
+    color: var(--text-color);
+}
+.logo{
+    display:flex;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo i{
+    color: white;
+    font-size: 32px;
+    margin-right: 5px;
+}
+.caixa-contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.cartao-contato {
+    width: 500px;
+    height: 200px;
+    border-radius: 12px;
+    border: 5px solid #ccc;
+    place-items: center;
+}
+
+.superior-direito {
+    position: absolute;
+    top: 100px;
+    right: 150px;
+    border-color: #af0d71;
+    box-shadow: 10px 10px 15px #af0d71;
+}
+.central-esquerdo {
+    position: absolute;
+    top: 300%;
+    left: 150px;
+    border-color: #9109bb;
+    box-shadow: 10px 10px 15px #9109bb;
+}
+.inferior-direito {
+    position: absolute;
+    top: 400px;
+    right: 150px;
+    border-color: #610923;
+    box-shadow: 10px 10px 15px #610923;
+}
+
+.cartao-contato h1 {
+    justify-content: center;
+    display: flex;
+}
+.cartao-contato h2 {
+    justify-content: center;
+    display: flex;
+}
+.cartao-contato h3 {
+    justify-content: center;
+    display: flex;
+}
+.central-esquerdo h1 {
+    color: #000b7e;
+}
+.superior-direito h1 {
+    color: #2b0daf;
+} 
+.inferior-direito h1 {
+    color: #610923;
+}
+.cabeçalho {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #010033;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.cabeçalho .navegar ul {
+    list-style: none;
+}
+.cabeçalho .navegar ul li {
+    position: relative;
+    float: left;
+}
+.cabeçalho .navegar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #999999;
+    display: block;
+}
+.cabeçalho .navegar ul li a:hover {
+    background: var(--main-color);
+    color: #fff;
+}
+.cabeçalho .navegar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #fff;
+    display: none;
+}
+.cabeçalho .navegar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cabeçalho .navegar ul li:hover > ul {
+    display: initial;
+}
+
+#barra {
+    display: none;
+}
+.cabeçalho label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="perfil.component.css">
+</head>
+
+<body>
+    <header class="cabeçalho">
+        <a href="inicio" class="logo"><i class='bx bx-home-alt-2'></i>ZETA GAMES</a>
+    </header>
+    <div class="caixa-perfil">
+        <div class="perfil" id="pefil">
+            <div class="perfil-usuario">
+                <img src="/assets/images/garoto.jpg">
+            <div class="linhas">
+                <h1>Bem Vindo ao nosso site</h1>
+                <li>{{ nome || 'Não informado' }}</li>
+                <h2>Espero que encontre algo que goste!</h2>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
